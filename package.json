@@ -1,0 +1,34 @@
+{
+  "name": "html-css-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanzhao1993/html-css-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanzhao1993/html-css-learning/issues"
+  },
+  "homepage": "https://github.com/ryanzhao1993/html-css-learning#readme",
+  "dependencies": {
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.1.1",
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "mathjs": "^4.4.2",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "multer": "^1.2.1"
+  }
+}

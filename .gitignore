@@ -1,0 +1,7 @@
+.idea
+.project
+node_modules
+public
+lib
+
+.DS_Store
