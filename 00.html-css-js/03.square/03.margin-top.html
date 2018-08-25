@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+    .square {
+      width: 30%;
+      overflow: hidden;
+      background-color: yellow;
+    }
+    .square:after {
+      content: '';
+      display: block;
+      margin-top: 100%;
+    }
+	</style>
+</head>
+<body>
+    <div class="square">这里如果有内容，就不是正方形喽，限制height也没有用。</div>
+</body>
+</html>
