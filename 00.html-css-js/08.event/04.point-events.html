@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body {
+      font: 14px/1.4 "Trebuchet MS", sans-serif;
+      padding: 3em;
+      max-width: 600px;
+      background: whitesmoke;
+    }
+
+    p {
+      padding: 0.75em;
+      background: #ddd;
+    }
+    #avoid-clicks {
+      display: block;
+      width: 8em;
+      height: 8em;
+      background: rgba(51,51,51,0.85);
+      position: absolute;
+      top: 1em;
+      left: 4em;
+      padding: 0.75em;
+      pointer-events: none;
+      color: whitesmoke;
+    }
+	</style>
+</head>
+<body>
+	<p id="bg">This is some basic flow content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos ipsum sunt repellat nisi modi voluptatum ipsa eligendi minima cumque. Accusantium laudantium autem quae earum eaque expedita quia molestiae in.</p>
+  <div id="avoid-clicks">
+    try selecting text through me
+    <br />
+    <br />
+    <span id="child">child child child</span>
+  </div>
+
+
+	<script>
+    var target = document.getElementById('avoid-clicks');
+    target.addEventListener('click', function(event) {
+      console.log('target click----------');
+      console.log(this);
+      console.log(event.target);
+      console.log(event.currentTarget);
+    }, false);
+
+    var bg = document.getElementById('bg');
+    bg.addEventListener('click', function(event) {
+      console.log('bg click----------');
+      console.log(this);
+      console.log(event.target);
+      console.log(event.currentTarget);
+    }, false);
+
+    var child = document.getElementById('child');
+    child.addEventListener('click', function(event) {
+      console.log('child click----------');
+      console.log(this);
+      console.log(event.target);
+      console.log(event.currentTarget);
+    }, false);
+	</script>
+</body>
+</html>
